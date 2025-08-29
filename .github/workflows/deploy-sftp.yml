@@ -1,0 +1,21 @@
+name: Deploy via SFTP
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: SFTP upload to Hostinger
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT }}          # set to 22 for SFTP
+          local_path: 'wp-content/themes/kadence-pp-child/*'
+          remote_path: ${{ secrets.FTP_SERVER_DIR }}
+          sftp_only: true

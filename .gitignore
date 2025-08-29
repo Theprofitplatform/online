@@ -1,0 +1,18 @@
+# Node/Composer
+node_modules/
+vendor/
+*.log
+
+# Local env
+.env
+*.env.*
+
+# WordPress things you should not track here
+wp-admin/
+wp-includes/
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/advanced-cache.php
+wp-content/object-cache.php

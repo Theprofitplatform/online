@@ -1,0 +1,23 @@
+{
+  "name": "the-profit-platform-wp",
+  "version": "1.0.0",
+  "description": "WordPress deployment automation for The Profit Platform",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "health-check": "node scripts/health-check.mjs",
+    "publish-content": "node scripts/wp-post.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "keywords": [
+    "wordpress",
+    "deployment",
+    "ci-cd",
+    "rest-api"
+  ],
+  "author": "The Profit Platform",
+  "license": "GPL-2.0-or-later"
+}
