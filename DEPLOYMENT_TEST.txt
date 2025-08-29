@@ -1,0 +1,13 @@
+HOSTINGER GIT DEPLOYMENT TEST
+============================
+
+If you can see this file on your server, Git deployment is working!
+
+Timestamp: 2025-01-17
+Test ID: HGD-001
+Repository: https://github.com/Theprofitplatform/online.git
+
+This file should appear in your theme directory:
+wp-content/themes/kadence-pp-child/DEPLOYMENT_TEST.txt
+
+If present, Git integration is successful! ✅
